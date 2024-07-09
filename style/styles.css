@@ -6,37 +6,61 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #121212;
+    background-color: #15172D;
     color: #fff;
 }
 
 header {
+    background-color: #15172D;
+    padding: 5vh 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #1a1a1a;
+}
+
+.nav-left {
+    padding-left: 7vw;
+    display: flex;
+    align-items: center;
+    gap: 16vw;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1vw
 }
 
 .logo img {
-    height: 40px;
+    height: 3vw;
+}
+
+.logo h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 5vw;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    font-size: 1.25rem;
 }
 
 .auth-buttons {
     display: flex;
-    gap: 10px;
+    gap: 2vw;
+    padding-right: 10vw;
 }
 
 .auth-buttons .login,
@@ -98,13 +122,72 @@ main .hero {
     color: #fff;
 }
 
-.hero-buttons .play {
-    background-color: transparent;
-    border: 2px solid #6a00ff;
-    color: #6a00ff;
-}
-
 .hero-image img {
     max-width: 100%;
     height: auto;
 }
+
+
+main .games {
+    padding: 40px 20px;
+}
+
+.games h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.tag {
+    background-color: #6a00ff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.875rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.card-content .play {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #6a00ff;
+    color: #fff;
+}
+
