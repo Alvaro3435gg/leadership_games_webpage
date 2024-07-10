@@ -25,8 +25,49 @@ nav {
     align-items: center;
 }
 
-.circle{
+.circle {
+    width: 35vw;
+    height: 35vh;
+    background-color: #7419F7;
+    border-radius: 50%;
+    filter: blur(100px);
+    position: absolute;
+    z-index: -1000;
+}
 
+#circle1{
+    left: 0;
+    top: 130vh;
+    right: 65vw;
+    bottom: 0;
+}
+
+#circle2{
+    left: 0;
+    top: 20vh;
+    right: 65vw;
+    bottom: 0;
+}
+
+#circle3{
+    left: 65vw;
+    top: 60vh;
+    right: 0;
+    bottom: 0;
+}
+
+#circle4{
+    left: 65vw;
+    top: 150vh;
+    right: 0;
+    bottom: 0;
+}
+
+#circle5{
+    left: 0;
+    top: 200vh;
+    right: 65vw;
+    bottom: 0;
 }
 
 .nav-left {
