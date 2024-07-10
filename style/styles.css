@@ -147,7 +147,7 @@ main .hero {
 
 .hero-buttons .explore,
 .hero-buttons .play {
-    padding: 10px 40px;
+    padding: 10px 25px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -159,6 +159,14 @@ main .hero {
     background: linear-gradient(90deg, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 100%);
     color: #fff;
     border: none;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.hero-content .explore .arrow-button-logo{
+    width: 2vw;
+    margin-left: 2vw;
 }
 
 .hero-image img {
