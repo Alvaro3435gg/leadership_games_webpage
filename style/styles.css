@@ -65,22 +65,46 @@ nav ul li a {
 
 .auth-buttons .login,
 .auth-buttons .signup {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    padding: 10px 2vw;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 .auth-buttons .login {
-    background-color: #6a00ff;
+    background: rgb(116,25,247);
+    background: linear-gradient(90deg, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 100%);
     color: #fff;
+    border: none;
 }
 
 .auth-buttons .signup {
-    background-color: transparent;
-    border: 2px solid #6a00ff;
-    color: #6a00ff;
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 100%);
+    cursor: pointer;
+    z-index: 1;
+    color: #fff;
 }
+
+.auth-buttons .signup::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    border-radius: 19px;
+    background-color: #15172D;
+    z-index: -1;
+}
+
+.auth-buttons .signup::after {
+    content: attr(data);
+    font-size: 16px;
+}
+
 
 main .hero {
     display: flex;
@@ -115,20 +139,23 @@ main .hero {
 .hero-buttons {
     display: flex;
     gap: 20px;
+    padding-top: 5vw;
 }
 
 .hero-buttons .explore,
 .hero-buttons .play {
-    padding: 15px 30px;
+    padding: 10px 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .hero-buttons .explore {
-    background-color: #6a00ff;
+    background: rgb(116,25,247);
+    background: linear-gradient(90deg, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 100%);
     color: #fff;
+    border: none;
 }
 
 .hero-image img {
