@@ -16,12 +16,17 @@ header {
     padding: 5vh;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.circle{
+
 }
 
 .nav-left {
@@ -34,7 +39,7 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 1vw
 }
 
 .logo img {
@@ -114,6 +119,7 @@ main .hero {
     justify-content: space-between;
     align-items: center;
     padding: 100px 20px;
+
 }
 
 .hero-content {
