@@ -148,6 +148,7 @@ main .games {
 
 .swiper-wrapper {
     display: flex;
+    gap: 5vw;
 }
 
 .swiper-slide {
