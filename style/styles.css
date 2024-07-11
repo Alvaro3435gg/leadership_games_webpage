@@ -228,93 +228,63 @@ main .hero {
         left: 10px;
     }
     5% {
-        left: 9px;
+        left: 8.5px;
     }
     10% {
-        left: 8px;
-    }
-    15% {
         left: 7px;
     }
+    15% {
+        left: 5.5px;
+    }
     20% {
-        left: 6px;
-    }
-    25% {
-        left: 5px;
-    }
-    30% {
         left: 4px;
     }
-    35% {
-        left: 3px;
+    25% {
+        left: 2.5px;
     }
-    40% {
-        left: 2px;
-    }
-    45% {
+    30% {
         left: 1px;
     }
-    50% {
-        left: 0px;
+    35% {
+        left: -0.5px;
     }
-    55% {
-        left: -1px;
-    }
-    60% {
+    40% {
         left: -2px;
     }
-    65% {
-        left: -3px;
+    45% {
+        left: -3.5px;
     }
-    70% {
-        left: -4px;
-    }
-    75% {
+    50% {
         left: -5px;
     }
-    80% {
-        left: -6px;
+    55% {
+        left: -6.5px;
     }
-    85% {
-        left: -7px;
-    }
-    90% {
+    60% {
         left: -8px;
     }
-    95% {
-        left: -9px;
+    65% {
+        left: -9.5px;
     }
-    100% {
-        left: -10px;
-    }
-    105% {
+    70% {
         left: -11px;
     }
-    110% {
-        left: -12px;
+    75% {
+        left: -12.5px;
     }
-    115% {
-        left: -13px;
-    }
-    120% {
+    80% {
         left: -14px;
     }
-    125% {
-        left: -15px;
+    85% {
+        left: -15.5px;
     }
-    130% {
-        left: -16px;
-    }
-    135% {
+    90% {
         left: -17px;
     }
-    140% {
-        left: -18px;
+    95% {
+        left: -18.5px;
     }
-    145% {
-        left: -19px;
-    }
-    150% {
+    100% {
         left: -20px;
     }
 }
