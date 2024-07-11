@@ -1,3 +1,6 @@
+
+
+
 const swiper = new Swiper('.swiper-container', {
     loop: false,              // Para que el swiper haga loop
     slidesPerView: 3,        // Número de slides visibles por vista
