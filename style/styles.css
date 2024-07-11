@@ -27,7 +27,7 @@ nav {
 
 .circle {
     width: 35vw;
-    height: 35vh;
+    height: 50vh;
     background-color: #7419F7;
     border-radius: 50%;
     filter: blur(100px);
@@ -214,6 +214,11 @@ main .hero {
 .hero-content .explore .arrow-button-logo{
     width: 2vw;
     margin-left: 2vw;
+    top: 5px;
+    position: relative;
+}
+
+.hero-content .explore a{
 }
 
 .hero-image img {
@@ -305,6 +310,29 @@ main .games {
 
 .swiper-pagination-bullet {
     background: #6a00ff;
+}
+
+/* Estilos de expansión para botones al pasar el mouse */
+.auth-buttons .login:hover,
+.auth-buttons .signup:hover,
+.hero-buttons .explore:hover,
+.hero-buttons .explore .arrow-button-logo:hover,
+.hero-buttons .play:hover {
+    transform: scale(1.1); /* Escala el botón a un 110% de su tamaño original */
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+/*.auth-buttons .login:hover,
+.hero-buttons .explore:hover,
+.auth-buttons .signup:hover {
+   background: linear-gradient(90deg, rgba(255,101,255,1) 0%, rgba(116,25,247,1) 100%);}*/
+
+.auth-buttons .login,
+.auth-buttons .signup,
+.hero-buttons .explore,
+.hero-buttons .play {
+   display: inline-block;
+   transition: transform 0.3s ease;
 }
 
 
