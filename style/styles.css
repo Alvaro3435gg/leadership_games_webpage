@@ -228,61 +228,61 @@ main .hero {
         left: 10px;
     }
     5% {
-        left: 8.5px;
+        left: 8px;
     }
     10% {
         left: 7px;
     }
     15% {
-        left: 5.5px;
+        left: 5px;
     }
     20% {
         left: 4px;
     }
     25% {
-        left: 2.5px;
+        left: 2px;
     }
     30% {
         left: 1px;
     }
     35% {
-        left: -0.5px;
+        left: -0;
     }
     40% {
         left: -2px;
     }
     45% {
-        left: -3.5px;
+        left: -3px;
     }
     50% {
         left: -5px;
     }
     55% {
-        left: -6.5px;
+        left: -6px;
     }
     60% {
         left: -8px;
     }
     65% {
-        left: -9.5px;
+        left: -9px;
     }
     70% {
         left: -11px;
     }
     75% {
-        left: -12.5px;
+        left: -12px;
     }
     80% {
         left: -14px;
     }
     85% {
-        left: -15.5px;
+        left: -15px;
     }
     90% {
         left: -17px;
     }
     95% {
-        left: -18.5px;
+        left: -18px;
     }
     100% {
         left: -20px;
@@ -314,8 +314,11 @@ main .games {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    overflow: hidden
-}
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    overflow-x: visible; /* Permite que el contenido se desborde solo horizontalmente */
+    margin-left: -30px; /* Empuja el contenido hacia la izquierda */
+    padding-left: 30px; }
+
 
 .swiper-wrapper {
     display: flex;
@@ -327,12 +330,21 @@ main .games {
     align-items: center;
 }
 
+
 .card {
     background-color: #3F2182;
     border-radius: 20px;
-    overflow: hidden;
     width: 90%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
+
+/* Define the grow animation */
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
 
 .card img {
     width: 100%;
@@ -374,6 +386,15 @@ main .games {
     padding-top: 4vw;
 }
 
+.swiper-slide card{
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover card{
+    transform: scale(1.1); /* Escala del 110% al hacer hover */
+    z-index: 10; /* Para que la slide se coloque por encima de las demás */
+}
+
 /* Estilos de navegación de Swiper */
 .swiper-button-next,
 .swiper-button-prev {
@@ -389,8 +410,14 @@ main .games {
 .auth-buttons .signup:hover,
 .hero-buttons .explore:hover,
 .hero-buttons .explore .arrow-button-logo:hover,
-.hero-buttons .play:hover {
+.hero-buttons .play:hover,
+.hero-image .gamer:hover,
+.play:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.gamer{
     transition: transform 0.3s ease;
 }
 
@@ -400,6 +427,7 @@ main .games {
     background: rgb(189, 189, 189);
     background: linear-gradient(90deg,rgba(255,101,255,1)  0%, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 48%, rgba(116,25,247,1) 100%);
     background-size: 300% 100%;
+    transition: transform 0.3s ease;
     animation: gradient 2s ease infinite;
 }
 
@@ -412,13 +440,13 @@ main .games {
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
@@ -428,6 +456,14 @@ main .games {
 .hero-buttons .play {
    display: inline-block;
    transition: transform 0.3s ease;
+}
+
+.navElement {
+    transition: font-size 0.3s ease;
+}
+
+.navElement:hover {
+    font-size: 1.4em;
 }
 
 
