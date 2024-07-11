@@ -10,4 +10,10 @@ const swiper = new Swiper('.swiper-container', {
     loopAdditionalSlides: 0,
 });
 
+document.querySelector('.explore').addEventListener('mouseover', () => {
+    document.querySelector('.arrow-button-logo').classList.add('animate');
+});
 
+document.querySelector('.explore').addEventListener('mouseout', () => {
+    document.querySelector('.arrow-button-logo').classList.remove('animate');
+});
