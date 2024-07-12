@@ -420,6 +420,9 @@ main .games {
 .hero-buttons .explore .arrow-button-logo:hover,
 .hero-buttons .play:hover,
 .hero-image .gamer:hover,
+.options a:hover,
+.back-btn:hover,
+.login-btn:hover,
 .play:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -431,7 +434,9 @@ main .games {
 
 .auth-buttons .login:hover,
 .auth-buttons .signup:hover,
-.hero-buttons .explore:hover {
+.hero-buttons .explore:hover,
+.back-btn:hover,
+.login-btn:hover{
     background: rgb(189, 189, 189);
     background: linear-gradient(90deg,rgba(255,101,255,1)  0%, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 48%, rgba(116,25,247,1) 100%);
     background-size: 300% 100%;
@@ -474,6 +479,123 @@ main .games {
     font-size: 1.45em;
 }
 
+
+
+
+
+.login-container {
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );    padding: 2vw;
+    text-align: center;
+    width: 30vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-container {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #d6c5f2;
+    height: 7vh;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5vw;
+    font-size: 0.9em;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 2.5vh;
+    border-radius: 25px;
+    border: none;
+    background: rgb(116,25,247);
+    background: linear-gradient(90deg, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 100%);
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.login-form p{
+    margin-top: 4vh;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    font-family: 'Michroma', sans-serif;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked {
+    background-color: #007BFF;
+    border: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked:before {
+    content: '\2713';
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-checkbox span {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.back-btn {
+    padding: 10px 2vw;
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgb(116,25,247);
+    background: linear-gradient(90deg, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 100%);
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 5vh;
+    left: 2vw;
+}
 
 
 
