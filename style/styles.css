@@ -423,7 +423,7 @@ main .games {
 .options-login a:hover,
 .back-btn:hover,
 .login-btn:hover,
-.singup-btn:hover,
+.signup-btn:hover,
 .play:hover
 {
     transform: scale(1.1);
@@ -439,7 +439,7 @@ main .games {
 .hero-buttons .explore:hover,
 .back-btn:hover,
 .login-btn:hover,
-.singup-btn:hover{
+.signup-btn:hover{
     background: rgb(189, 189, 189);
     background: linear-gradient(90deg,rgba(255,101,255,1)  0%, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 48%, rgba(116,25,247,1) 100%);
     background-size: 300% 100%;
@@ -518,7 +518,7 @@ input[type="text"], input[type="password"] {
 }
 
 .options-login,
-.options-singup {
+.options-signup {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -527,13 +527,13 @@ input[type="text"], input[type="password"] {
 }
 
 .options-login a,
-.options-singup a {
+.options-signup a {
     color: #fff;
     text-decoration: none;
 }
 
 .login-btn,
-.singup-btn {
+.signup-btn {
     width: 100%;
     padding: 2.5vh;
     border-radius: 25px;
@@ -546,7 +546,7 @@ input[type="text"], input[type="password"] {
 }
 
 .login-form p,
-.singup-form p {
+.signup-form p {
     margin-top: 4vh;
 }
 
@@ -612,7 +612,7 @@ input[type="text"], input[type="password"] {
     font-size: 1rem;
 }
 
-.singup-container {
+.signup-container {
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6px );
@@ -628,12 +628,12 @@ input[type="text"], input[type="password"] {
     transform: translate(-50%, -50%);
 }
 
-.options-singup:hover a {
+.options-signup:hover a {
     text-decoration: underline;
     color:rgba(255,101,255,1);
 }
 
-.options-singup {
+.options-signup {
     font-size: 1.2rem;
     text-align: center;
     display: inline-block;
