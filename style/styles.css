@@ -420,10 +420,12 @@ main .games {
 .hero-buttons .explore .arrow-button-logo:hover,
 .hero-buttons .play:hover,
 .hero-image .gamer:hover,
-.options a:hover,
+.options-login a:hover,
 .back-btn:hover,
 .login-btn:hover,
-.play:hover {
+.singup-btn:hover,
+.play:hover
+{
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
@@ -436,7 +438,8 @@ main .games {
 .auth-buttons .signup:hover,
 .hero-buttons .explore:hover,
 .back-btn:hover,
-.login-btn:hover{
+.login-btn:hover,
+.singup-btn:hover{
     background: rgb(189, 189, 189);
     background: linear-gradient(90deg,rgba(255,101,255,1)  0%, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 48%, rgba(116,25,247,1) 100%);
     background-size: 300% 100%;
@@ -514,7 +517,8 @@ input[type="text"], input[type="password"] {
     height: 7vh;
 }
 
-.options {
+.options-login,
+.options-singup {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -522,12 +526,14 @@ input[type="text"], input[type="password"] {
     font-size: 0.9em;
 }
 
-.options a {
+.options-login a,
+.options-singup a {
     color: #fff;
     text-decoration: none;
 }
 
-.login-btn {
+.login-btn,
+.singup-btn {
     width: 100%;
     padding: 2.5vh;
     border-radius: 25px;
@@ -539,7 +545,8 @@ input[type="text"], input[type="password"] {
     cursor: pointer;
 }
 
-.login-form p{
+.login-form p,
+.singup-form p {
     margin-top: 4vh;
 }
 
@@ -597,5 +604,55 @@ input[type="text"], input[type="password"] {
     left: 2vw;
 }
 
+.login-form a{
+    color: #fff;
+}
 
+.login-form h3{
+    font-size: 1rem;
+}
 
+.singup-container {
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );    padding: 2vw;
+    text-align: center;
+    width: 30vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.options-singup:hover a {
+    text-decoration: underline;
+    color:rgba(255,101,255,1);
+}
+
+.options-singup {
+    font-size: 1.2rem;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    padding-bottom: 2vh;
+    position: relative;
+    bottom: 3vh;
+}
+
+.explore a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-buttons{
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}

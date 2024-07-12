@@ -13,6 +13,12 @@
         body {
             overflow: hidden;
         }
+
+        .inline a:hover strong {
+            transform: scale(1.1); /* Aumenta la escala al 110% */
+            transition: transform 0.3s ease; /* Agrega una transición suave */
+            color:rgba(255,101,255,1);
+        }
     </style>
 </head>
 <body>
@@ -47,19 +53,18 @@
                 <input type="password" placeholder="Password" required>
             </label>
         </div>
-        <div class="options">
+        <div class="options-login">
             <label class="custom-checkbox">
                 <input type="checkbox">
                 <span>Remember me</span>
             </label>
             <a href="#">Forgot password?</a>
         </div>
-        <button type="submit" class="login-btn">Login</button>
-        <p>Don't have an account? <a href="#">Register here</a></p>
+        <button type="submit" class="login-btn" onclick="window.location.href='mainPage.html'">Login</button>
+        <p class="inline">Don't have an account? <a href="singup.html"><strong>Register here</strong></a></p>
     </form>
 </div>
 
-<script src="script/scripts_mainPage.js"></script>
 <script src="script/scripts_login.js"></script>
 </body>
 </html>
