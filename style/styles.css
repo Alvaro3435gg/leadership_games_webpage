@@ -125,6 +125,7 @@ nav ul li a {
     padding: 10px 2vw;
     border-radius: 20px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .auth-buttons .login {
@@ -451,6 +452,7 @@ main .games {
 .auth-buttons .signup:hover::before {
     background-image: linear-gradient(90deg, rgba(255, 101, 255, 1) 0%, rgba(116, 25, 247, 1) 0%, rgba(255, 101, 255, 1) 48%, rgba(116, 25, 247, 1) 100%);
     background-size: 300% 100%;
+    transition: transform 0.3s ease;
     animation: gradient 2s ease infinite;
 }
 
@@ -678,20 +680,7 @@ a {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
+    padding-top: 8vh;
 }
 
 .sidebar .closebtn {
@@ -707,3 +696,96 @@ a {
     cursor: pointer;
 }
 
+.sidebar-element-button-container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(145deg, #2a2a72, #009ffd);
+    border-radius: 50px;
+    position: relative;
+    width: 23vw;
+    height: 12vh;
+    transition: transform 0.2s;
+    margin-bottom: 5vh;
+    justify-content: center;
+}
+
+.sidebar-element-button-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 1);
+    background: linear-gradient(145deg, #009ffd, #2a2a72);
+}
+
+.sidebar-element-icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    color: #00eaff;
+}
+
+.sidebar-element-title {
+    position:relative;
+    bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar-element-percentage {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #00eaff;
+}
+
+.sidebar-element-progress-bar {
+    width: 100%;
+    height: 3vh;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5px;
+}
+
+.sidebar-element-progress-bar::before {
+    content: '';
+    width: 30%; /* Ajusta este valor para el porcentaje deseado */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-element-button-container:hover .sidebar-element-progress-bar::before {
+    animation: gradient 2s ease infinite;
+    background: linear-gradient(90deg,rgba(255,101,255,1) 0%, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 48%, rgba(116,25,247,1) 100%);
+    background-size: 300% 100%;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-element-progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.sidebar-element-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
