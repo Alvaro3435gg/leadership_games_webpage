@@ -15,7 +15,6 @@ body {
     font-family: 'Michroma', sans-serif;
     background-color: #15172D;
     color: #fff;
-
 }
 
 header {
@@ -677,10 +676,12 @@ a {
     z-index: 1005;
     top: 0;
     left: 0;
-    background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 8vh;
+    background: rgb(45,12,93);
+    background: linear-gradient(90deg, rgba(45,12,93,1) 0%, rgba(116,42,155,1) 49%, rgba(135,54,135,1) 100%);
+
 }
 
 .sidebar .closebtn {
@@ -699,7 +700,7 @@ a {
 .sidebar-element-button-container {
     display: flex;
     align-items: center;
-    background: linear-gradient(145deg, #2a2a72, #009ffd);
+    background: transparent;
     border-radius: 50px;
     position: relative;
     width: 23vw;
@@ -712,7 +713,7 @@ a {
 .sidebar-element-button-container:hover {
     transform: scale(1.05);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 1);
-    background: linear-gradient(145deg, #009ffd, #2a2a72);
+    background: transparent;
 }
 
 .sidebar-element-icon {
@@ -748,17 +749,33 @@ a {
 
 .sidebar-element-progress-bar::before {
     content: '';
-    width: 30%; /* Ajusta este valor para el porcentaje deseado */
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    background: linear-gradient(90deg,rgba(255,101,255,1) 0%, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 48%, rgba(116,25,247,1) 100%);
+    background-size: 300% 100%;
 }
+
+#ability0 .sidebar-element-progress-bar::before {
+    width: 30%;
+}
+
+#ability1 .sidebar-element-progress-bar::before {
+    width: 70%;
+}
+
+#ability2 .sidebar-element-progress-bar::before {
+    width: 50%;
+}
+
+#ability3 .sidebar-element-progress-bar::before {
+    width: 100%;
+}
+
 
 .sidebar-element-button-container:hover .sidebar-element-progress-bar::before {
     animation: gradient 2s ease infinite;
-    background: linear-gradient(90deg,rgba(255,101,255,1) 0%, rgba(116,25,247,1) 0%, rgba(255,101,255,1) 48%, rgba(116,25,247,1) 100%);
-    background-size: 300% 100%;
     transition: transform 0.3s ease;
 }
 
@@ -788,4 +805,17 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1001;
+    display: none;
 }
