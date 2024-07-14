@@ -77,6 +77,12 @@ nav {
     bottom: 0;
 }
 
+#circle6{
+    top: 270vh;
+    left: 65vw;
+    bottom: 0;
+}
+
 .nav-left {
     padding-left: 7vw;
     display: flex;
@@ -835,7 +841,7 @@ a {
     left: 0;
     border-radius: 4px;
     pointer-events: none;
-    background-color: rgba(26, 188, 156, 0.9);
+    background-color: #3F2182;
 }
 
 .in-top .info {
@@ -990,11 +996,29 @@ a {
     width: 100%;
     height: 100%;
     border-radius: 4px;
+}
 
+.container-courses-accessed li:hover .normal img {
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(232,115,216,0.5);
+    -moz-box-shadow: 0px 0px 15px 10px rgba(232,115,216,0.5);
+    box-shadow: 0px 0px 15px 10px rgba(232,115,216,0.5);
 }
 
 .container-courses-accessed {
     width: 90vw;
     margin: 0 auto;
+}
+
+.otherGames h2 {
+    font-size: 3rem;
+    padding-bottom: 6vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-courses-accessed{
+    width: 60vw;
+    margin: 0 auto;
+    position: relative;
 }
 /*# sourceMappingURL=background.css.map */
