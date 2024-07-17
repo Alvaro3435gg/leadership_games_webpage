@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verificar si se encontró un usuario y si la contraseña es válida
         if ($usuario && $contrasena == $usuario['contrasena']) {
             // Usuario y contraseña correctos
-            echo json_encode(['status' => 'success']);
+            echo json_encode(['status' => 'success', 'id_usuario' => $usuario['id_usuario']]);
         } else {
             // Usuario o contraseña incorrectos
             echo json_encode(['status' => 'error', 'message' => 'Invalid username or password']);

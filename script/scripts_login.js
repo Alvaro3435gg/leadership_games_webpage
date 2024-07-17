@@ -39,7 +39,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
                 const data = JSON.parse(response); // Intentar parsear la respuesta como JSON
                 console.log('Datos parseados:', data); // Mostrar los datos parseados en la consola
                 if (data.status === 'success') {
-                    window.location.href = 'mainPageAccesed.html';
+                    // Redirigir a mainPageAccesed.php con id_usuario como parámetro
+                    window.location.href = `mainPageAccesed.php?id_usuario=${data.id_usuario}`;
                 } else {
                     console.log('Invalid username or password');
                 }

@@ -773,27 +773,27 @@ a {
     background-size: 300% 100%;
 }
 
-#ability0 .sidebar-element-progress-bar::before {
+#ability1 .sidebar-element-progress-bar::before {
     width: 30%;
 }
 
-#ability1 .sidebar-element-progress-bar::before {
+#ability2 .sidebar-element-progress-bar::before {
     width: 70%;
 }
 
-#ability2 .sidebar-element-progress-bar::before {
+#ability3 .sidebar-element-progress-bar::before {
     width: 50%;
 }
 
-#ability3 .sidebar-element-progress-bar::before {
+#ability4 .sidebar-element-progress-bar::before {
     width: 100%;
 }
 
-#ability4 .sidebar-element-progress-bar::before {
+#ability5 .sidebar-element-progress-bar::before {
     width: 20%;
 }
 
-#ability5 .sidebar-element-progress-bar::before {
+#ability6 .sidebar-element-progress-bar::before {
     width: 30%;
 }
 

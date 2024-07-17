@@ -14,18 +14,10 @@
 <body>
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="sidebar-element-button-container" id = "ability0">
-        <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
-        <div class="sidebar-element-content">
-            <div class="sidebar-element-title">Self-management</div>
-            <div class="sidebar-element-progress-bar"></div>
-        </div>
-        <div class="sidebar-element-percentage">30%</div>
-    </div>
     <div class="sidebar-element-button-container" id = "ability1">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
         <div class="sidebar-element-content">
-            <div class="sidebar-element-title">Self-management</div>
+            <div class="sidebar-element-title">Comunicacion</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
         <div class="sidebar-element-percentage">30%</div>
@@ -33,7 +25,7 @@
     <div class="sidebar-element-button-container" id = "ability2">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
         <div class="sidebar-element-content">
-            <div class="sidebar-element-title">Self-management</div>
+            <div class="sidebar-element-title">Colaboracion</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
         <div class="sidebar-element-percentage">30%</div>
@@ -41,7 +33,7 @@
     <div class="sidebar-element-button-container" id = "ability3">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
         <div class="sidebar-element-content">
-            <div class="sidebar-element-title">Self-management</div>
+            <div class="sidebar-element-title">Creatividad  innovacion</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
         <div class="sidebar-element-percentage">30%</div>
@@ -49,7 +41,7 @@
     <div class="sidebar-element-button-container" id = "ability4">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
         <div class="sidebar-element-content">
-            <div class="sidebar-element-title">Self-management</div>
+            <div class="sidebar-element-title">Pensamiento critico</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
         <div class="sidebar-element-percentage">30%</div>
@@ -57,7 +49,15 @@
     <div class="sidebar-element-button-container" id = "ability5">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
         <div class="sidebar-element-content">
-            <div class="sidebar-element-title">Self-management</div>
+            <div class="sidebar-element-title">Responsabilidad social e individual</div>
+            <div class="sidebar-element-progress-bar"></div>
+        </div>
+        <div class="sidebar-element-percentage">30%</div>
+    </div>
+    <div class="sidebar-element-button-container" id = "ability6">
+        <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
+        <div class="sidebar-element-content">
+            <div class="sidebar-element-title">Autogestion</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
         <div class="sidebar-element-percentage">30%</div>
