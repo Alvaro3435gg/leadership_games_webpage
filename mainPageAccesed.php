@@ -223,7 +223,7 @@ try {
                                 <span class="tag">#trends</span>
                                 <p>July 22, 2028</p>
                                 <h3>Communication</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Play →</button></a>
+                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton1" class="play" onclick="updateHabilidad(1)">Play →</button></a>
                             </div>
                         </div>
                     </div>
@@ -441,11 +441,44 @@ try {
 </main>
 
 </div>
+
 <script>
-const urlParams = new URLSearchParams(window.location.search);
-const id_usuario = urlParams.get('id_usuario');
-console.log('id a utilizar:', id_usuario);
+function updateHabilidad(id_habilidad) {
+    // Obtener el id_usuario desde la página (supongamos que está almacenado en una variable PHP)
+    var id_usuario = <?php echo $id_usuario; ?>; // Asegúrate de definir $id_usuario antes de esta línea
+
+    // Datos que se enviarán en la solicitud
+    var requestData = { id_usuario: id_usuario, id_habilidad: id_habilidad };
+
+    // Realizar la solicitud al servidor
+    fetch('actualizar_habilidad.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestData),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Ocurrió un error al actualizar la habilidad.');
+        }
+        // Manejar la respuesta si es necesaria
+        return response.json(); // O puedes usar response.text() dependiendo de la respuesta esperada
+    })
+    .then(data => {
+        console.log('Respuesta del servidor:', data);
+        // Aquí puedes actualizar la interfaz de usuario si es necesario
+    })
+    .catch(error => {
+        console.error('Error al actualizar la habilidad:', error);
+        // Manejar el error, mostrar un mensaje al usuario, etc.
+    });
+
+    // Mostrar en consola los datos enviados
+    console.log('Datos enviados:', requestData);
+}
 </script>
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="script/scripts_mainPageAccess.js"></script>
 <script src="script/mouseHover.js"></script>
