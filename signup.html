@@ -33,29 +33,28 @@
 <div class="circle" id="circle2"></div>
 <div class="circle" id="circle3"></div>
 
-
 <div class="signup-container">
   <h1>Sign Up</h1>
-  <form class="signup-form">
+  <form class="signup-form" action="crear_usuario.php" method="post">
     <div class="input-container">
       <label>
-        <input type="text" placeholder="Username" required>
+        <input type="text" name="nombre_usuario" placeholder="Username" required>
       </label>
     </div>
     <div class="input-container">
       <label>
-        <input type="password" placeholder="Password" required>
+        <input type="password" name="contrasena" placeholder="Password" required>
       </label>
     </div>
     <div class="input-container">
       <label>
-        <input type="text" placeholder="Mail" required>
+        <input type="text" name="correo_electronico" placeholder="Mail" required>
       </label>
     </div>
     <div class="options-signup">
       <a href="#">Privacy Policy</a>
     </div>
-    <button type="submit" class="signup-btn" onclick="window.location.href='login.html'">Sign Up</button>
+    <button type="submit" class="signup-btn">Sign Up</button>
   </form>
 </div>
 
