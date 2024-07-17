@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDUCA2 & Co. Accesed</title>
-    <link rel="stylesheet" href="style/styles.css">
-    <link rel="stylesheet" href="style/background.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-</head>
-<body>
 <?php
 require 'conexion.php'; // Incluir el archivo de conexión
 
@@ -64,6 +50,46 @@ try {
     echo "Error en la consulta: " . $e->getMessage();
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUCA2 & Co. Accesed</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/background.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<style>
+    #ability1 .sidebar-element-progress-bar::before {
+        width: <?php echo $ability1; ?>%;
+    }
+
+    #ability2 .sidebar-element-progress-bar::before {
+        width: <?php echo $ability2; ?>%;
+    }
+
+    #ability3 .sidebar-element-progress-bar::before {
+        width: <?php echo $ability3; ?>%;
+    }
+
+    #ability4 .sidebar-element-progress-bar::before {
+        width: <?php echo $ability4; ?>%;
+    }
+
+    #ability5 .sidebar-element-progress-bar::before {
+        width: <?php echo $ability5; ?>%;
+    }
+
+    #ability6 .sidebar-element-progress-bar::before {
+        width: <?php echo $ability6; ?>%;
+    }
+</style>
+</head>
+<body>
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="sidebar-element-button-container" id = "ability1">

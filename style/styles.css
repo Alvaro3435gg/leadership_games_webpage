@@ -773,30 +773,6 @@ a {
     background-size: 300% 100%;
 }
 
-#ability1 .sidebar-element-progress-bar::before {
-    width: 30%;
-}
-
-#ability2 .sidebar-element-progress-bar::before {
-    width: 70%;
-}
-
-#ability3 .sidebar-element-progress-bar::before {
-    width: 50%;
-}
-
-#ability4 .sidebar-element-progress-bar::before {
-    width: 100%;
-}
-
-#ability5 .sidebar-element-progress-bar::before {
-    width: 20%;
-}
-
-#ability6 .sidebar-element-progress-bar::before {
-    width: 30%;
-}
-
 
 .sidebar-element-button-container:hover .sidebar-element-progress-bar::before {
     animation: gradient 2s ease infinite;
