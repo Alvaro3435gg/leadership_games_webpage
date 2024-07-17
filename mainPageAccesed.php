@@ -12,6 +12,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 </head>
 <body>
+<?php
+require 'conexion.php'; // Incluir el archivo de conexión
+
+// Obtener el id_usuario desde la URL
+$id_usuario = $_GET['id_usuario'];
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM usuario_habilidades WHERE id_usuario = :id_usuario";
+
+try {
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['id_usuario' => $id_usuario]);
+
+    // Variables para almacenar habilidades
+    $ability1 = null;
+    $ability2 = null;
+    $ability3 = null;
+    $ability4 = null;
+    $ability5 = null;
+    $ability6 = null;
+
+    // Obtener los resultados
+    while ($row = $stmt->fetch()) {
+        switch ($row['id_habilidad']) {
+            case 1:
+                $ability1 = $row['progreso'];
+                break;
+            case 2:
+                $ability2 = $row['progreso'];
+                break;
+            case 3:
+                $ability3 = $row['progreso'];
+                break;
+            case 4:
+                $ability4 = $row['progreso'];
+                break;
+            case 5:
+                $ability5 = $row['progreso'];
+                break;
+            case 6:
+                $ability6 = $row['progreso'];
+                break;
+            default:
+                // No hacer nada o manejar otro caso si es necesario
+                break;
+        }
+    }
+
+} catch (\PDOException $e) {
+    echo "Error en la consulta: " . $e->getMessage();
+}
+?>
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="sidebar-element-button-container" id = "ability1">
@@ -20,7 +72,7 @@
             <div class="sidebar-element-title">Comunicacion</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
-        <div class="sidebar-element-percentage">30%</div>
+        <div class="sidebar-element-percentage"><?php echo $ability1; ?>%</div>
     </div>
     <div class="sidebar-element-button-container" id = "ability2">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
@@ -28,7 +80,7 @@
             <div class="sidebar-element-title">Colaboracion</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
-        <div class="sidebar-element-percentage">30%</div>
+        <div class="sidebar-element-percentage"><?php echo $ability2; ?>%</div>
     </div>
     <div class="sidebar-element-button-container" id = "ability3">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
@@ -36,7 +88,7 @@
             <div class="sidebar-element-title">Creatividad  innovacion</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
-        <div class="sidebar-element-percentage">30%</div>
+        <div class="sidebar-element-percentage"><?php echo $ability3; ?>%</div>
     </div>
     <div class="sidebar-element-button-container" id = "ability4">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
@@ -44,7 +96,7 @@
             <div class="sidebar-element-title">Pensamiento critico</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
-        <div class="sidebar-element-percentage">30%</div>
+        <div class="sidebar-element-percentage"><?php echo $ability4; ?>%</div>
     </div>
     <div class="sidebar-element-button-container" id = "ability5">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
@@ -52,7 +104,7 @@
             <div class="sidebar-element-title">Responsabilidad social e individual</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
-        <div class="sidebar-element-percentage">30%</div>
+        <div class="sidebar-element-percentage"><?php echo $ability5; ?>%</div>
     </div>
     <div class="sidebar-element-button-container" id = "ability6">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
@@ -60,7 +112,7 @@
             <div class="sidebar-element-title">Autogestion</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
-        <div class="sidebar-element-percentage">30%</div>
+        <div class="sidebar-element-percentage"><?php echo $ability6; ?>%</div>
     </div>
 </div>
 <div id="overlay"></div>
@@ -363,6 +415,11 @@
 </main>
 
 </div>
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const id_usuario = urlParams.get('id_usuario');
+console.log('id a utilizar:', id_usuario);
+</script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="script/scripts_mainPageAccess.js"></script>
 <script src="script/mouseHover.js"></script>
