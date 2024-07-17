@@ -8,7 +8,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     // Simple validación
     if (nombre_usuario === '' || contrasena === '' || correo_electronico === '') {
-        alert('Please fill in all fields.');
+        console.log('Please fill in all fields.');
         return;
     }
 
@@ -32,7 +32,6 @@ document.querySelector('form').addEventListener('submit', function(event) {
         .then(response => response.text())
         .then(data => {
             console.log(data); // Mostrar respuesta del servidor en la consola
-            alert('Sign Up successful!');
             window.location.href = 'login.html';
         })
         .catch(error => console.error('Error:', error));
