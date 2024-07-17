@@ -9,11 +9,14 @@ try {
     $id_usuario = $data['id_usuario'];
     $id_habilidad = $data['id_habilidad'];
 
-    // Preparar la consulta SQL
+    // Preparar la consulta SQL con un límite de progreso máximo de 100
     $sql = "UPDATE usuario_habilidades
-            SET progreso = progreso + 10
+            SET progreso = CASE
+                              WHEN progreso + 10 > 100 THEN 100
+                              ELSE progreso + 10
+                            END
             WHERE id_usuario = :id_usuario AND id_habilidad = :id_habilidad";
-
+            
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['id_usuario' => $id_usuario, 'id_habilidad' => $id_habilidad]);
 
