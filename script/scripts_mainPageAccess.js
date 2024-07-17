@@ -6,7 +6,6 @@ document.getElementById("overlay").style.display = "flex";
 function closeNav() {
 document.getElementById("mySidebar").style.width = "0";
 document.getElementById("overlay").style.display = "none";
-
 }
 
 
