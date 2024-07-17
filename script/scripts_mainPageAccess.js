@@ -1,5 +1,5 @@
 function openNav() {
-document.getElementById("mySidebar").style.width = "25vw";
+document.getElementById("mySidebar").style.width = "35vw";
 document.getElementById("overlay").style.display = "flex";
 }
 

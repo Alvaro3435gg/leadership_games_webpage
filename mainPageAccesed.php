@@ -154,15 +154,15 @@ try {
                 <h1>EDUCA2 & Co.</h1>
             </div>
             <ul>
-                <li><a href="#mainPage" class="navElement">Home</a></li>
-                <li><a href="#" class="navElement">About</a></li>
-                <li><a href="#gamePage" class="navElement">Games</a></li>
-                <li><a href="#personality" class="navElement">Personality</a></li>
-                <li><a href="#" class="navElement">Contact</a></li>
+                <li><a href="#mainPage" class="navElement">Inicio</a></li>
+                <li><a href="#" class="navElement">Sobre Nosotros</a></li>
+                <li><a href="#gamePage" class="navElement">Juegos</a></li>
+                <li><a href="#personality" class="navElement">Personalidades</a></li>
+                <li><a href="#" class="navElement">Contáctanos</a></li>
             </ul>
         </div>
         <div class="auth-buttons">
-            <button class="login" onclick="window.location.href='mainPage.html'">Sign Up</button>
+            <button class="login" onclick="window.location.href='mainPage.html'">Cerrar sesión</button>
         </div>
     </nav>
 </header>
@@ -199,14 +199,14 @@ try {
             <img src="assets/gamer.png" alt="Training Competencies" class="gamer">
         </div>
         <div class="hero-content">
-            <h1>TRAINING COMPETENCIES FOR LIFE</h1>
+            <h1>FORMANDO COMPENTENCIAS PARA LA VIDA</h1>
             <div class="right-content">
                 <a href="#gamePage"><img src="assets/arrow-Photoroom.png" alt="arrow"></a>
-                <p>Navigating skills for life</p>
+                <p>Desarrollando nuestras habilidades</p>
             </div>
             <a href="#gamePage">
                 <div class="hero-buttons">
-                    <button class="explore">Explore Now<img src="assets/arrowimage.png" alt="arrow" class="arrow-button-logo"></button>
+                    <button class="explore">Explóralo Ahora<img src="assets/arrowimage.png" alt="arrow" class="arrow-button-logo"></button>
                 </div>
             </a>
         </div>
@@ -337,7 +337,7 @@ try {
                 </li>
                 <li>
                     <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
+                        <img src='assets/criticalThinking_image.png' alt='Imagen del producto'>
                     </a>
                     <div class='info'>
                         <h3>Single-origin coffee whatever</h3>

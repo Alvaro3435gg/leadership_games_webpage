@@ -12,8 +12,8 @@ try {
     // Preparar la consulta SQL con un límite de progreso máximo de 100
     $sql = "UPDATE usuario_habilidades
             SET progreso = CASE
-                              WHEN progreso + 10 > 100 THEN 100
-                              ELSE progreso + 10
+                              WHEN progreso + 20 > 100 THEN 100
+                              ELSE progreso + 20
                             END
             WHERE id_usuario = :id_usuario AND id_habilidad = :id_habilidad";
             
