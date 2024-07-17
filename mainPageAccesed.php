@@ -346,7 +346,7 @@ try {
                 </li>
                 <li>
                     <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
+                        <img src='assets/inspector.jpg' alt='Imagen del producto'>
                     </a>
                     <div class='info'>
                         <h3>Single-origin coffee whatever</h3>
