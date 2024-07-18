@@ -20,3 +20,4 @@ document.querySelector('.explore').addEventListener('mouseover', () => {
 document.querySelector('.explore').addEventListener('mouseout', () => {
     document.querySelector('.arrow-button-logo').classList.remove('animate');
 });
+

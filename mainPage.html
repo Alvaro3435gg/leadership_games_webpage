@@ -22,9 +22,9 @@
             </div>
             <ul>
                 <li><a href="#mainPage" class="navElement">Inicio</a></li>
-                <li><a href="#" class="navElement">Conócenos</a></li>
+                <li><a href="#about" class="navElement">Conócenos</a></li>
                 <li><a href="#personality" class="navElement">Personalidades</a></li>
-                <li><a href="#" class="navElement">Contacto</a></li>
+                <li><a href="#contact" class="navElement">Contacto</a></li>
             </ul>
         </div>
         <div class="auth-buttons">
@@ -243,13 +243,49 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h1>Contacto</h1>
+            <form class="contact-form">
+                <div class="input-container">
+                    <label>
+                        <input type="text" placeholder="Nombre" required>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <label>
+                        <input type="email" placeholder="Email" required>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <label>
+                        <textarea placeholder="Mensaje" required></textarea>
+                    </label>
+                </div>
+                <button type="submit" class="contact-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
 
 
 
 
 </main>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="script/scripts_mainPage.js"></script>
+<script>
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        Swal.fire({
+            icon: 'success',
+            title: 'Enviado con éxito',
+            text: 'Tu mensaje ha sido enviado correctamente',
+            confirmButtonText: 'Aceptar'
+        });
+    });
+</script>
 
 </body>
 </html>
