@@ -1038,6 +1038,7 @@ a {
     display: flex;
     width: 100%;
     justify-content: center;
+    padding-top: 10vh;
 }
 
 .left-content, .right-content {
@@ -1054,8 +1055,10 @@ a {
     justify-content: center;
 }
 
-.down-content img {
-    margin-right: 10px;
+.down-content img,
+.up-content img{
+    width: 40vw;
+    padding: 0 5vw;
 }
 
 .down-text {
@@ -1063,3 +1066,23 @@ a {
     flex-direction: column;
 }
 
+.down-text p{
+    text-align: right;
+    padding-right: 5vw;
+    line-height: 2.5;
+}
+
+.left-content h2{
+    font-size: 5rem;
+    padding-bottom: 6vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.left-content p{
+    padding-bottom: 3vh;
+    text-align: left;
+    padding-left: 5vw;
+    line-height: 2.5; /* Aumentar el interlineado */
+
+}

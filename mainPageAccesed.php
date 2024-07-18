@@ -98,7 +98,7 @@ try {
         width: <?php echo $ability6; ?>%;
     }
     .otherGames h2 {
-        top:300vh;
+        top:285vh;
     }
 </style>
 </head>

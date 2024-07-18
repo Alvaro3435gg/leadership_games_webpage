@@ -42,7 +42,13 @@ document.querySelector('form').addEventListener('submit', function(event) {
                     // Redirigir a mainPageAccesed.php con id_usuario como parámetro
                     window.location.href = `mainPageAccesed.php?id_usuario=${data.id_usuario}`;
                 } else {
-                    console.log('Invalid username or password');
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Datos de usuario o contraseña incorrectos',
+                        confirmButtonText: 'Aceptar'
+                    });
+
                 }
 
             } catch (error) {
