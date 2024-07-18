@@ -100,6 +100,10 @@ try {
     .otherGames h2 {
         top:285vh;
     }
+
+    .hero-content h1 {
+        font-size:3rem;
+    }
 </style>
 </head>
 <body>
@@ -171,7 +175,7 @@ try {
                 <li><a href="#mainPage" class="navElement">Inicio</a></li>
                 <li><a href="#gamePage" class="navElement">Juegos</a></li>
                 <li><a href="#personality" class="navElement">Personalidades</a></li>
-                <li><strong>Bienvenidx!<br><?php echo $nombre_usuario; ?></strong></li>
+                <li><strong>Bienvenidx! <?php echo $nombre_usuario; ?></strong></li>
             </ul>
         </div>
         <div class="auth-buttons">
@@ -212,12 +216,12 @@ try {
             <img src="assets/gamer.png" alt="Training Competencies" class="gamer">
         </div>
         <div class="hero-content">
-            <h1>FORMANDO COMPENTENCIAS PARA LA VIDA</h1>
+            <h1>¡ES HORA DE APRENDER NUEVAS HABILIDADES!</h1>
             <div class="right-content">
                 <a href="#gamePage"><img src="assets/arrow-Photoroom.png" alt="arrow"></a>
-                <p>Desarrollando nuestras habilidades</p>
+                <p>Descubre tu personalidad aquí</p>
             </div>
-            <a href="#gamePage">
+            <a href="https://www.16personalities.com/es/test-de-personalidad" target="_blank">
                 <div class="hero-buttons">
                     <button class="explore">Explóralo Ahora<img src="assets/arrowimage.png" alt="arrow" class="arrow-button-logo"></button>
                 </div>
@@ -236,7 +240,7 @@ try {
                                 <span class="tag">#tendencias</span>
                                 <p>Julio 22, 2028</p>
                                 <h3>Comunicación</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton1" class="play" onclick="updateHabilidad(1)">Jugar →</button></a>
+                                <a href="https://garticphone.com/es" target="_blank"><button id="updateButton1" class="play" onclick="updateHabilidad(1)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -247,7 +251,7 @@ try {
                                 <span class="tag">#noticias</span>
                                 <p>Julio 15, 2028</p>
                                 <h3>Colaboración</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton2" class="play" onclick="updateHabilidad(2)">Jugar →</button></a>
+                                <a href="https://www.team17.com/games/overcooked-2/" target="_blank"><button id="updateButton2" class="play" onclick="updateHabilidad(2)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -258,7 +262,7 @@ try {
                                 <span class="tag">#tendencias</span>
                                 <p>Julio 08, 2028</p>
                                 <h3>Creatividad e innovación</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton3" class="play" onclick="updateHabilidad(3)">Jugar →</button></a>
+                                <a href="https://www.minecraft.net/es-es" target="_blank"><button id="updateButton3" class="play" onclick="updateHabilidad(3)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -280,7 +284,7 @@ try {
                                 <span class="tag">#tendencias</span>
                                 <p>Julio 15, 2028</p>
                                 <h3>Responsabilidad social y personal</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton5" class="play" onclick="updateHabilidad(5)">Jugar →</button></a>
+                                <a href="https://www.minijuegos.mx/juego/among-us-online-edition" target="_blank"><button id="updateButton5" class="play" onclick="updateHabilidad(5)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -291,7 +295,7 @@ try {
                                 <span class="tag">#tendencias</span>
                                 <p>Julio 08, 2028</p>
                                 <h3>Autogestión</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton6" class="play" onclick="updateHabilidad(6)">Jugar →</button></a>
+                                <a href="https://www.ea.com/es-mx/games/the-sims" target="_blank"><button id="updateButton6" class="play" onclick="updateHabilidad(6)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
