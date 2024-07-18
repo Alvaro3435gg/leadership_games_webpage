@@ -299,157 +299,158 @@ try {
             </div>
         </div>
     </section>
-    <section class ="otherGames" id="personality">
-        <h2>Personalidades</h2>
-        <div class='container-courses-accessed'>
-            <ul>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/criticalThinking_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/inspector.jpg' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-                <li>
-                    <a class='normal' href='#'>
-                        <img src='assets/CreativitiyInovation_image.png' alt='Imagen del producto'>
-                    </a>
-                    <div class='info'>
-                        <h3>Single-origin coffee whatever</h3>
-                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+<section class="otherGames" id="personality">
+    <h2>Personalidades</h2>
+    <div class="container-courses-accessed">
+        <ul>
+            <li>
+                <a class="normal">
+                    <img src="assets/Inspector.png" alt="Imagen del Inspector">
+                </a>
+                <div class="info">
+                    <h3>ISTJ (Inspector)</h3>
+                    <p>Organizado, confiable y tradicional.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Protector.png" alt="Imagen del Protector">
+                </a>
+                <div class="info">
+                    <h3>ISFJ (Protector)</h3>
+                    <p>Compasivo, leal y dedicado al cuidado de los demás.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Abogado.png" alt="Imagen del Abogado">
+                </a>
+                <div class="info">
+                    <h3>INFJ (Abogado)</h3>
+                    <p>Intuitivo, empático y buscador de significado.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Arquitecto.png" alt="Imagen del Arquitecto">
+                </a>
+                <div class="info">
+                    <h3>INTJ (Arquitecto)</h3>
+                    <p>Analítico, estratégico y visionario.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Virtuoso.png" alt="Imagen del Virtuoso">
+                </a>
+                <div class="info">
+                    <h3>ISTP (Virtuoso)</h3>
+                    <p>Práctico, reservado y amante de las experiencias.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Aventurero.png" alt="Imagen del Aventurero">
+                </a>
+                <div class="info">
+                    <h3>ISFP (Aventurero)</h3>
+                    <p>Creativo, independiente y amante de la estética.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Mediador.png" alt="Imagen del Mediador">
+                </a>
+                <div class="info">
+                    <h3>INFP (Mediador)</h3>
+                    <p>Idealista, compasivo y buscador de autenticidad.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Pensador.png" alt="Imagen del Pensador">
+                </a>
+                <div class="info">
+                    <h3>INTP (Pensador)</h3>
+                    <p>Lógico, curioso e innovador.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Emprendedor.png" alt="Imagen del Emprendedor">
+                </a>
+                <div class="info">
+                    <h3>ESTP (Emprendedor)</h3>
+                    <p>Entusiasta, adaptable y amante de la acción.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Animador.png" alt="Imagen del Animador">
+                </a>
+                <div class="info">
+                    <h3>ESFP (Animador)</h3>
+                    <p>Sociable, espontáneo y amante de la diversión.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Campeón.png" alt="Imagen del Campeón">
+                </a>
+                <div class="info">
+                    <h3>ENFP (Campeón)</h3>
+                    <p>Empático, entusiasta y buscador de nuevas ideas.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Innovador.png" alt="Imagen del Innovador">
+                </a>
+                <div class="info">
+                    <h3>ENTP (Innovador)</h3>
+                    <p>Inteligente, curioso y amante de los desafíos.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Organizador.png" alt="Imagen del Organizador">
+                </a>
+                <div class="info">
+                    <h3>ESTJ (Organizador)</h3>
+                    <p>Práctico, decidido y enfocado en resultados.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Consúl.png" alt="Imagen del Cónsul">
+                </a>
+                <div class="info">
+                    <h3>ESFJ (Cónsul)</h3>
+                    <p>Sociable, empático y dedicado al bienestar de los demás.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Protagonista.png" alt="Imagen del Protagonista">
+                </a>
+                <div class="info">
+                    <h3>ENFJ (Protagonista)</h3>
+                    <p>Carismático, empático y líder inspirador.</p>
+                </div>
+            </li>
+            <li>
+                <a class="normal">
+                    <img src="assets/Comandante.png" alt="Imagen del Comandante">
+                </a>
+                <div class="info">
+                    <h3>ENTJ (Comandante)</h3>
+                    <p>Estratégico, ambicioso y líder decidido.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
 
 </main>
 

@@ -1008,11 +1008,12 @@ a {
 }
 .container-courses-accessed li h3 {
     margin: 0;
-    font-size: 16px;
+    font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.9);
 }
 .container-courses-accessed li p {
-    font-size: 12px;
+    padding-top: 2vh;
+    font-size: 1rem;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.8);
 }
