@@ -125,7 +125,7 @@ try {
     <div class="sidebar-element-button-container" id = "ability3">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
         <div class="sidebar-element-content">
-            <div class="sidebar-element-title">Creatividad  innovacion</div>
+            <div class="sidebar-element-title">Creatividad e innovacion</div>
             <div class="sidebar-element-progress-bar"></div>
         </div>
         <div class="sidebar-element-percentage"><?php echo $ability3; ?>%</div>
@@ -246,8 +246,8 @@ try {
                             <div class="card-content">
                                 <span class="tag">#noticias</span>
                                 <p>Julio 15, 2028</p>
-                                <h3>Pensamiento Crítico</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
+                                <h3>Colaboración</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton2" class="play" onclick="updateHabilidad(2)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -258,7 +258,7 @@ try {
                                 <span class="tag">#tendencias</span>
                                 <p>Julio 08, 2028</p>
                                 <h3>Creatividad e innovación</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
+                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton3" class="play" onclick="updateHabilidad(3)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -268,8 +268,8 @@ try {
                             <div class="card-content">
                                 <span class="tag">#tendencias</span>
                                 <p>Julio 22, 2028</p>
-                                <h3>Autogestión</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
+                                <h3>Pensamiento Crítico</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton4" class="play" onclick="updateHabilidad(4)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -279,8 +279,8 @@ try {
                             <div class="card-content">
                                 <span class="tag">#tendencias</span>
                                 <p>Julio 15, 2028</p>
-                                <h3>Colaboración</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
+                                <h3>Responsabilidad social y personal</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton5" class="play" onclick="updateHabilidad(5)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -290,8 +290,8 @@ try {
                             <div class="card-content">
                                 <span class="tag">#tendencias</span>
                                 <p>Julio 08, 2028</p>
-                                <h3>Responsabilidad social y personal</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
+                                <h3>Autogestión</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton6" class="play" onclick="updateHabilidad(6)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
