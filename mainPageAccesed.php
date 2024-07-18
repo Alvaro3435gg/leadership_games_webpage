@@ -4,23 +4,24 @@ require 'conexion.php'; // Incluir el archivo de conexión
 // Obtener el id_usuario desde la URL
 $id_usuario = $_GET['id_usuario'];
 
-// Preparar la consulta SQL
-$sql = "SELECT * FROM usuario_habilidades WHERE id_usuario = :id_usuario";
+// Preparar la consulta SQL para obtener habilidades
+$sql_habilidades = "SELECT * FROM usuario_habilidades WHERE id_usuario = :id_usuario";
+
+// Variables para almacenar habilidades
+$ability1 = null;
+$ability2 = null;
+$ability3 = null;
+$ability4 = null;
+$ability5 = null;
+$ability6 = null;
 
 try {
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute(['id_usuario' => $id_usuario]);
+    // Ejecutar la consulta de habilidades
+    $stmt_habilidades = $pdo->prepare($sql_habilidades);
+    $stmt_habilidades->execute(['id_usuario' => $id_usuario]);
 
-    // Variables para almacenar habilidades
-    $ability1 = null;
-    $ability2 = null;
-    $ability3 = null;
-    $ability4 = null;
-    $ability5 = null;
-    $ability6 = null;
-
-    // Obtener los resultados
-    while ($row = $stmt->fetch()) {
+    // Obtener los resultados de habilidades
+    while ($row = $stmt_habilidades->fetch()) {
         switch ($row['id_habilidad']) {
             case 1:
                 $ability1 = $row['progreso'];
@@ -46,10 +47,19 @@ try {
         }
     }
 
+    // Preparar la consulta SQL para obtener el nombre de usuario
+    $sql_nombre_usuario = "SELECT nombre_usuario FROM usuarios WHERE id_usuario = :id_usuario";
+    $stmt_nombre_usuario = $pdo->prepare($sql_nombre_usuario);
+    $stmt_nombre_usuario->execute(['id_usuario' => $id_usuario]);
+
+    // Obtener el resultado del nombre de usuario
+    $nombre_usuario = $stmt_nombre_usuario->fetchColumn();
+
 } catch (\PDOException $e) {
     echo "Error en la consulta: " . $e->getMessage();
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -87,11 +97,15 @@ try {
     #ability6 .sidebar-element-progress-bar::before {
         width: <?php echo $ability6; ?>%;
     }
+    .otherGames h2 {
+        top:300vh;
+    }
 </style>
 </head>
 <body>
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h3>Habilidades</h3>
     <div class="sidebar-element-button-container" id = "ability1">
         <div class="sidebar-element-icon"><i class="fas fa-tasks"></i></div>
         <div class="sidebar-element-content">
@@ -155,10 +169,9 @@ try {
             </div>
             <ul>
                 <li><a href="#mainPage" class="navElement">Inicio</a></li>
-                <li><a href="#" class="navElement">Sobre Nosotros</a></li>
                 <li><a href="#gamePage" class="navElement">Juegos</a></li>
                 <li><a href="#personality" class="navElement">Personalidades</a></li>
-                <li><a href="#" class="navElement">Contáctanos</a></li>
+                <li><strong>Bienvenidx!<br><?php echo $nombre_usuario; ?></strong></li>
             </ul>
         </div>
         <div class="auth-buttons">
@@ -212,7 +225,7 @@ try {
         </div>
     </section>
     <section class="games" id="gamePage">
-        <h2>Play the games</h2>
+        <h2>Juegos</h2>
         <div class = "overflow-container">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -220,10 +233,10 @@ try {
                         <div class="card">
                             <img src="assets/comuncation_image.png" alt="Communication">
                             <div class="card-content">
-                                <span class="tag">#trends</span>
-                                <p>July 22, 2028</p>
-                                <h3>Communication</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton1" class="play" onclick="updateHabilidad(1)">Play →</button></a>
+                                <span class="tag">#tendencias</span>
+                                <p>Julio 22, 2028</p>
+                                <h3>Comunicación</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button id="updateButton1" class="play" onclick="updateHabilidad(1)">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -231,10 +244,10 @@ try {
                         <div class="card">
                             <img src="assets/criticalThinking_image.png" alt="Critical thinking">
                             <div class="card-content">
-                                <span class="tag">#news</span>
-                                <p>July 15, 2028</p>
-                                <h3>Critical thinking</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Play →</button></a>
+                                <span class="tag">#noticias</span>
+                                <p>Julio 15, 2028</p>
+                                <h3>Pensamiento Crítico</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -242,10 +255,10 @@ try {
                         <div class="card">
                             <img src="assets/CreativitiyInovation_image.png" alt="Creativity and innovation">
                             <div class="card-content">
-                                <span class="tag">#trends</span>
-                                <p>July 08, 2028</p>
-                                <h3>Creativity and innovation</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Play →</button></a>
+                                <span class="tag">#tendencias</span>
+                                <p>Julio 08, 2028</p>
+                                <h3>Creatividad e innovación</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -253,10 +266,10 @@ try {
                         <div class="card">
                             <img src="assets/selfManagement_image.png" alt="Self-management">
                             <div class="card-content">
-                                <span class="tag">#trends</span>
-                                <p>July 22, 2028</p>
-                                <h3>Self-management</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Play →</button></a>
+                                <span class="tag">#tendencias</span>
+                                <p>Julio 22, 2028</p>
+                                <h3>Autogestión</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -264,10 +277,10 @@ try {
                         <div class="card">
                             <img src="assets/collaboration_image.png" alt="Collaboration">
                             <div class="card-content">
-                                <span class="tag">#trends</span>
-                                <p>July 15, 2028</p>
-                                <h3>Collaboration</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Play →</button></a>
+                                <span class="tag">#tendencias</span>
+                                <p>Julio 15, 2028</p>
+                                <h3>Colaboración</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -275,10 +288,10 @@ try {
                         <div class="card">
                             <img src="assets/socialResponsability_image.png" alt="Personal and Social responsibility">
                             <div class="card-content">
-                                <span class="tag">#trends</span>
-                                <p>July 08, 2028</p>
-                                <h3>Personal and Social responsibility</h3>
-                                <a href="https://www.chess.com/" target="_blank"><button class="play">Play →</button></a>
+                                <span class="tag">#tendencias</span>
+                                <p>Julio 08, 2028</p>
+                                <h3>Responsabilidad social y personal</h3>
+                                <a href="https://www.chess.com/" target="_blank"><button class="play">Jugar →</button></a>
                             </div>
                         </div>
                     </div>
@@ -287,7 +300,7 @@ try {
         </div>
     </section>
     <section class ="otherGames" id="personality">
-        <h2>Personalities</h2>
+        <h2>Personalidades</h2>
         <div class='container-courses-accessed'>
             <ul>
                 <li>

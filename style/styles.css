@@ -87,7 +87,7 @@ nav {
     padding-left: 7vw;
     display: flex;
     align-items: center;
-    gap: 4vw;
+    gap: 8vw;
 }
 
 .logo {
@@ -695,7 +695,7 @@ a {
     left: 0;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 8vh;
+    padding-top: 16vh;
     padding-left: 0;
     background: rgb(45,12,93);
     background: linear-gradient(90deg, rgba(45,12,93,1) 0%, rgba(116,42,155,1) 49%, rgba(135,54,135,1) 100%);
@@ -703,6 +703,11 @@ a {
     flex-direction: column;
     justify-content: left;
     align-items: center;
+}
+
+.sidebar h3{
+    position:absolute;
+    top: 6vh;
 }
 
 .sidebar .closebtn {
@@ -718,6 +723,7 @@ a {
     cursor: pointer;
 }
 
+
 .sidebar-element-button-container {
     display: flex;
     align-items: center;
@@ -727,8 +733,9 @@ a {
     height: 12vh;
     transition: transform 0.2s;
     margin-bottom: 5vh;
-    justify-content: left;
+    justify-content: space-between; /* Cambiado de center a space-between */
     padding-left: 2vw;
+    padding-right: 2vw; /* Añadido para mantener el margen derecho */
 }
 
 .sidebar-element-button-container:hover {
@@ -739,7 +746,7 @@ a {
 
 .sidebar-element-icon {
     font-size: 2.5rem;
-    margin-right: 20px;
+    margin-right: auto;
     color: #00eaff;
 }
 
@@ -754,12 +761,12 @@ a {
 .sidebar-element-percentage {
     font-size: 1rem;
     font-weight: bold;
-    margin-left: 15px;
+    margin-left: auto;
     color: #00eaff;
 }
 
 .sidebar-element-progress-bar {
-    width: 100%;
+    width: 20vw;
     height: 3vh;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 50px;
@@ -1004,10 +1011,14 @@ a {
 }
 
 .otherGames h2 {
-    font-size: 3rem;
+    font-size: 5rem;
     padding-bottom: 6vh;
     text-align: center;
     font-weight: bold;
+    transform: rotate(90deg);
+    position: absolute;
+    left:-10vw;
+    top:170vh;
 }
 
 .container-courses-accessed{
@@ -1016,3 +1027,39 @@ a {
     position: relative;
 }
 /*# sourceMappingURL=background.css.map */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.up-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.left-content, .right-content {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.down-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.down-content img {
+    margin-right: 10px;
+}
+
+.down-text {
+    display: flex;
+    flex-direction: column;
+}
+
